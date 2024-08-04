@@ -204,4 +204,25 @@ body::before {
     main {
         width: 100%;
     }
+    /* Info bar styles */
+.info-bar {
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.info-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info-bar a:hover {
+    text-decoration: underline;
+}
 }
