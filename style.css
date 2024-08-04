@@ -1,116 +1,148 @@
-body{
-    background-image: linear-gradient(to bottom right, #5103496b, #85049faf);
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
     height: 100vh;
 }
-#GMT{
-    font-family: candara;
+
+/* Variables for light and dark mode */
+:root {
+    --background: #f0f0f0;
+    --text-color: #333;
+    --nav-background: #ffffff;
+    --nav-text-color: #333;
+}
+
+body.dark-mode {
+    --background: #121212;
+    --text-color: #ffffff;
+    --nav-background: #333333;
+    --nav-text-color: #ffffff;
+}
+
+#GMT {
+    font-family: 'Candara', sans-serif;
     text-align: center;
     font-weight: 900;
-    color: rgb(54, 54, 54);
+    color: var(--text-color);
     text-decoration: underline;
 }
-nav{
+
+nav {
     text-align: center;
-    font-family: monospace;
+    font-family: 'Roboto Mono', monospace;
     font-size: 20px;
     border: 1px solid grey;
     border-radius: 25px;
-    background-image:linear-gradient(#d90581, #b8035e) ;
-    padding: 3px;
-    margin: auto;
+    background-color: var(--nav-background);
+    padding: 10px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+    color: var(--nav-text-color);
 }
-a{
-    color: rgb(0, 0, 0);
+
+nav a {
+    color: inherit;
     text-decoration: none;
-    
 }
-NAV{
-    word-spacing: 40PX ;
-}
-a:hover{
+
+nav a:hover {
     text-decoration: underline;
 }
-img{
+
+img {
     height: 150px;
     width: 300px;
-    border: 1px black;
+    border: 1px solid black;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     display: block;
 }
-#gmtxt{
+
+#gmtxt {
     position: relative;
-    font-family: candara;
-    font-weight:300px;  
-    text-decoration: none;
+    font-family: 'Candara', sans-serif;
+    font-weight: 300;
     text-align: center;
 }
-#gametoo{
+
+#gametoo {
     text-align: left;
     border: 2px solid grey;
-    width: 400px;
-    font-family: courier new;
-
-}
-#gametoo{
-    margin: auto;
-    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-family: 'Courier New', monospace;
+    margin: 20px auto;
+    padding: 20px;
     display: block;
     border-radius: 10px;
-    transition: 0.7s ease-in;
+    transition: border 0.3s, border-radius 0.3s;
 }
-#gametoo:hover{
- BORDER: 1px solid black;
- border-radius: 15px;
+
+#gametoo:hover {
+    border: 1px solid black;
+    border-radius: 15px;
 }
-        /* custom scroll bar*/
-        
-        
-        
-        ::-webkit-scrollbar {
-            width: 10px;
-          }
-          
-          /* Track */
-          ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey; 
-            border-radius: 0px;
-          }
-           
-          /* Handle */
-          ::-webkit-scrollbar-thumb {
-            background: grey; 
-            border-radius: 50px;
-          }
-          
-          /* Handle on hover */
-          ::-webkit-scrollbar-thumb:hover {
-            background: darkgrey; 
-            cursor: pointer;
-          }
-                  
-                  
-                  
-                  /* custom scroll bar*/
-                  
-          
-                  #parax{
-                  display: block;
-                    margin-right: auto;
-                    margin-left: auto;
-                    margin-bottom: 20px;
-                    line-height: 20px;
-                    border: -2px solid grey;
-                    border-radius: 50%;
-                    
-                  }
-                 #terx{
-                    text-align: center;
-                    font-family: candara;
-                    color: black;;
-                    font-weight: 200px;
-                    font-size: 20px;
-                 }
-                  
-                
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgrey;
+    cursor: pointer;
+}
+
+#parax {
+    display: block;
+    margin: 20px auto;
+    line-height: 20px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#terx {
+    text-align: center;
+    font-family: 'Candara', sans-serif;
+    color: var(--text-color);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--nav-background);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
