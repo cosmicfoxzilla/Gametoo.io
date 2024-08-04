@@ -1,0 +1,116 @@
+body{
+    background-image: linear-gradient(to bottom right, #5103496b, #85049faf);
+    height: 100vh;
+}
+#GMT{
+    font-family: candara;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(54, 54, 54);
+    text-decoration: underline;
+}
+nav{
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    background-image:linear-gradient(#d90581, #b8035e) ;
+    padding: 3px;
+    margin: auto;
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    
+}
+NAV{
+    word-spacing: 40PX ;
+}
+a:hover{
+    text-decoration: underline;
+}
+img{
+    height: 150px;
+    width: 300px;
+    border: 1px black;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#gmtxt{
+    position: relative;
+    font-family: candara;
+    font-weight:300px;  
+    text-decoration: none;
+    text-align: center;
+}
+#gametoo{
+    text-align: left;
+    border: 2px solid grey;
+    width: 400px;
+    font-family: courier new;
+
+}
+#gametoo{
+    margin: auto;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.7s ease-in;
+}
+#gametoo:hover{
+ BORDER: 1px solid black;
+ border-radius: 15px;
+}
+        /* custom scroll bar*/
+        
+        
+        
+        ::-webkit-scrollbar {
+            width: 10px;
+          }
+          
+          /* Track */
+          ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 0px;
+          }
+           
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+            background: grey; 
+            border-radius: 50px;
+          }
+          
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            background: darkgrey; 
+            cursor: pointer;
+          }
+                  
+                  
+                  
+                  /* custom scroll bar*/
+                  
+          
+                  #parax{
+                  display: block;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom: 20px;
+                    line-height: 20px;
+                    border: -2px solid grey;
+                    border-radius: 50%;
+                    
+                  }
+                 #terx{
+                    text-align: center;
+                    font-family: candara;
+                    color: black;;
+                    font-weight: 200px;
+                    font-size: 20px;
+                 }
+                  
+                
