@@ -9,25 +9,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1 ID="GMT">GAMETOO</h1>
-    <br>
-    <br>
-    <nav>
-      <a href="https://darkcore117.glitch.me/">MAIN-WEBSITE</a>
-      <a href="#ABOUT">ABOUT</a>
-      <a href="#FAQ">FAQ</a>
-    </nav>
-    <BR>
-    <br>
-    <input type="text" id="search-input" placeholder="Search...">
-    <br>
-    <br>
-    <a href="terraria.html">
-    <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610">
-    </a>
-    <div>
-    <div id="terx"><a href="terraria.html" >terraria </a></div>
-    </div>
-    <script src="index.js"></script>
+    <header>
+        <h1 ID="GMT">GAMETOO</h1>
+        <nav>
+            <a href="https://darkcore117.glitch.me/">MAIN-WEBSITE</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#FAQ">FAQ</a>
+            <input type="text" id="search-input" placeholder="Search games...">
+        </nav>
+        <button class="dark-mode-toggle">
+            <span class="material-icons">dark_mode</span>
+        </button>
+    </header>
+    <main id="content">
+        <div class="game-item">
+            <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/ncom/software/switch/70010000001702/dac3a26570b5ca1ddf703bf0add7cc7c527f71a2b56521baf69e20c7a573c610" alt="Terraria">
+            <div class="game-info">
+                <h2>Terraria</h2>
+                <p>Explore, build, and survive in Terraria, an action-adventure sandbox game.</p>
+                <a href="terraria.html">More Info</a>
+            </div>
+        </div>
+        <!-- Add more game items as needed -->
+    </main>
+    <footer id="terx">Footer Text</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
