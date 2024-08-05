@@ -225,4 +225,55 @@ body::before {
 .info-bar a:hover {
     text-decoration: underline;
 }
+    /* Download page styles */
+.game-download {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--nav-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.game-download h2 {
+    margin-bottom: 10px;
+}
+
+.game-download p {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.download-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: darken(var(--accent-color), 10%);
+}
+
+.screenshots {
+    margin-top: 20px;
+}
+
+.screenshot-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.screenshot-container img {
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 }
